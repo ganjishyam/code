@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+	.col-lg-3, col-md-4, col-sm-6 {
+    padding-right: 0px;}
+	
+	body{
+background:#eaeff5;
+}
+
+.car{opacity: 0;}
+	
+.well{
+	
+	border-radius: 8px;
+	padding:16px;
+	box-shadow: 3px 4px 5px;
+}
+.bgc{ background: #ffffff; }
+.draw{
+  float: none; 
+  clear: both;
+  width: 100%; 
+  
+}
+
+.draw ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.draw li{
+	float: none; 
+  width: 100%;
+}
+
+
+	
+	
+.draw li a{
+  display: block; 
+  width: 100%; 
+  position: relative; 
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box; 
+}
+	
+.draw li a:hover{opacity: 99;
+					color : #ffffff}
+
+.draw li a:after { 
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: -1;
+}
+
+.draw li:first-child {background :#202040; }
+
+.draw li a:hover:after{ width: 100%; }
+.draw li:first-child a:after{ background: #363636;  opacity: 0.5;  }
+.draw li:nth-child(2) a:after{ background: #363636; opacity: 0.5; }
+.draw li:nth-child(3) a:after{ background: #363636; opacity: 0.5;}
+.draw li:last-child a:after{ background: #363636; opacity: 0.5;}
+
+.navgation_bar {
+    padding: 11px 11px;
+}
+
+.bott {
+    margin-top: 21px;
+    margin-bottom: 0rem;
+}
+
+.botts {
+    float: right;
+    margin-bottom: 0rem;
+}
+.cars{background :red}
+
+
+.c1{opacity:0;
+	padding: 10%;
+	}
+.c2{opacity:0;
+	padding: 6%;
+	}
+.c3{opacity:0;
+	padding: 4%;
+	}
+.c4{opacity:0;
+	padding: 1%;
+	}
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand mt-3 brand" href="#">WebSiteName</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<div class="form-group row" style="margin-bottom: 0px">
+					<div class="col-md-8 col-sm-6 col-md-7">
+					<div class="navgation_bar">
+						<form action="" method="GET"  >
+						  <div class="input-group">
+							<input type="text" class="form-control" id="ex3"  name="search" placeholder="search...">
+							<div class="input-group-btn">
+							  <button class="btn btn-default" >
+								<i class="glyphicon glyphicon-search"></i>
+							  </button>
+							</div>
+						  </div>
+						</form>
+					</div>
+					</div>
+					
+					
+					
+	
+					<!--        <div class="col-md-2">-->
+					<div class="container-fluid">
+						<ul class="nav navbar-nav links">
+							<li><a href="#">Icons</a></li>
+							<li><a href="#">Colors</a></li>
+						</ul>
+					</div>
+					<!--        </div>-->
+				</div>
+
+			</div>
+		</div>
+	</nav>
+<div class="">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-lg-12">
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1"> <center> #Home </center> </a></li>
+						<li style="background :#543864;"><a href="" class="c2"> <center> #About </center> </a></li>
+						<li style="background :#ff6363;"><a href="" class="c3"> <center> #Work </center> </a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4"> <center> #Contact </center> </a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-3">
+			  <div class="well">
+				<nav class="draw">
+					<ul>
+						<li style="background :#202040;"><a href="" class="c1">Home</a></li>
+						<li style="background :#543864;"><a href="" class="c2">About</a></li>
+						<li style="background :#ff6363;"><a href="" class="c3">Work</a></li>
+						<li style="background :#ffbd69;"><a href="" class="c4">Contact</a></li>
+					</ul>
+					<p class="bott">
+						<span>pink
+							<a href="https://graf1x.com/24-shades-of-pink-color-palette/" class="botts" target="_blank">inspiration</a>
+						</span>
+					</p>
+				</nav> 
+			  </div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
